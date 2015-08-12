@@ -1,5 +1,5 @@
 {
-    "name": "My awesome extension :)",
+    "name": "Tab Tamer",
     "version": "0.1",
     "icons": {
         "16": "/img/icons/icon_16.png",
@@ -9,18 +9,12 @@
 
     "description": "Yay, I'm so useless.",
     "permissions": [
-        "geolocation"
+        "tabs"
     ],
 
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": [
-                    "/js/external/jquery.js",
-                    "/js/content_script.js"
-                ]
-        }
-    ],
+    "background": {
+      "scripts": ["/js/background.js"]
+    },
 
     "manifest_version": 2
 }
